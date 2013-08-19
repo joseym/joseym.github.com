@@ -240,6 +240,21 @@ body {
   font-size: 4em;
 }
 
+#impress #next h1 {
+  margin-bottom: 30px;
+  font-size: 4em;
+}
+
+#impress #next ul {
+  margin-top: 20px;
+  margin-left: 160px;
+  font-size: 2em;
+}
+
+#impress #next ul li {
+  margin-bottom: 10px;
+}
+
 #impress #end {
   padding: 50px;
   background: rgba(238, 238, 238, 0.8);
