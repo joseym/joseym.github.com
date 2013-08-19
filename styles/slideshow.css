@@ -63,6 +63,10 @@ body {
   transition: opacity 0.25s ease-in 1.25s;
 }
 
+#impress #me img {
+  width: 200px;
+}
+
 #impress #me.future,
 #impress #me.past {
   opacity: 0;
@@ -79,8 +83,10 @@ body {
 }
 
 #impress #me ul {
+  position: absolute;
+  bottom: 92px;
+  left: 325px;
   padding: 0;
-  margin: 25px 0 0 210px;
   list-style: none;
 }
 
@@ -212,8 +218,15 @@ body {
 }
 
 #impress #example {
-  font-size: 4em;
+  font-size: 7em;
   text-align: center;
+  opacity: 1;
+  transition: opacity linear .5s;
+}
+
+#impress #example.past,
+#impress #example.future {
+  opacity: 0;
 }
 
 #impress #resources {
