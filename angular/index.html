@@ -1,0 +1,317 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="../styles/bootstrap.css">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/slideshow.css">
+    <!-- endbuild -->
+</head>
+  <body ng-app="tulsaWebDevsApp">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+      <script src="../bower_components/es5-shim/es5-shim.js"></script>
+      <script src="../bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+    <div class="container">
+        
+        <div id="impress" class="container">
+
+        	<div id="start" class="step slide" 
+                data-x="0" 
+                data-y="0" 
+                data-z="800"
+                data-scale="10">
+        		<h1>Intro to <img src="http://angularjs.org/img/AngularJS-large.png" alt="AngularJS"></h1>
+        		<cite>Sloppily presented by <a href="http://www.github.com/joseym">Josey Morton</a></cite>
+    		</div>
+
+            <div id="me" class="step slide" 
+                data-x="2735" 
+                data-y="-365" 
+                data-z="-500" 
+                data-scale="1">
+
+                <h1><small>I'm</small> Josey Morton</h1>
+                <ul>
+                    <li>Front End-gineer,</li>
+                    <li><a href="http://www.github.com/angular-ui">AngularUI</a> team member,</li>
+                    <li>CloudLoad.com,</li>
+                    <li>AT&ampT</li>
+                </ul>
+
+            </div>
+
+            <div id="defined" class="step slide" 
+                data-x="0" 
+                data-y="5800" 
+                data-scale="10" 
+                data-rotate="0">
+                <h1>AngularJS is ...</h1>
+            </div>
+            
+            <div id="listed" class="step slide" 
+                data-x="-600" 
+                data-y="6900" 
+                data-z="-2000" 
+                data-scale="5" 
+                data-rotate="0">
+                <ul>
+                    <li>an <a href="#mvc">MVC</a>ish Framework</li>
+                    <li>What HTML would have been if designed for Applications</li>
+                    <li>Extensibility - plays well with other libraries and easily overwritten.</li>
+                </ul>
+                
+            </div>
+
+            <!-- Placeholder for full MVC flowchart -->
+            <div id="mvc" class="step slide" 
+                data-x="-2874" 
+                data-y="6445"  
+                data-z="-2010" 
+                data-scale=".05" 
+                data-rotate="0">
+                <div style="position: relative; font-size: 1.2em; margin-top: -8px; float: left;">
+                    <span class="icon-long-arrow-up"></span>
+                    <span class="icon-long-arrow-down"></span>
+                </div>
+                <div style="position: relative; font-size: 1.2em; margin-top: 0; float: right;">
+                    <span class="icon-long-arrow-up"></span>
+                    <span class="icon-long-arrow-down"></span>
+                </div>
+            </div>
+
+            <div id="mvc-model" class="step slide" 
+                data-x="-2885"
+                data-y="6439"  
+                data-z="-2010" 
+                data-scale=".05" 
+                data-rotate="0">
+                <div class="bubble">
+                    <h2>Model</h2>
+                    <p>The model represents your applications data.</p>
+                    <p>Data sources, API requests, databases.</p>
+                </div>
+            </div>
+            
+            <div id="mvc-controller" class="step slide" 
+                data-x="-2873" 
+                data-y="6451"  
+                data-z="-2015" 
+                data-scale=".05" 
+                data-rotate="0">
+                <div class="bubble">
+                    <h2>Controller</h2>
+                    <p>The Controller introduces the model to the view, passing on data and logic to and from the user.</p>
+                    <p>Form submission, API returns...</p>
+                </div>
+            </div>
+            
+            <div id="mvc-view" class="step slide" 
+                data-x="-2862" 
+                data-y="6439"  
+                data-z="-2020" 
+                data-scale=".05" 
+                data-rotate="0">
+                <div class="bubble">
+                    <h2>View</h2>
+                    <p>Representation of your data, or what the user interacts with.</p>
+                </div>
+            </div>
+
+            <div id="list-return" class="step slide" 
+                data-x="-600" 
+                data-y="6900" 
+                data-z="-2000" 
+                data-scale="5" 
+                data-rotate="0"></div>
+
+            <div id="differences" class="step slide" 
+                data-x="10000" 
+                data-y="0" 
+                data-z="0" 
+                data-scale="1" 
+                data-rotate="0">
+                <h1 style="display: inline">AngularJS <h2 style="float: right; margin-top: 0">is Different</h2></h1>
+                <ul>
+                    <li>Two-Way Data Binding</li>
+                    <li>Opinionated - There's a right way and a wrong way</li>
+                    <li>Feels like your writing HTML</li>
+                    <li>Does almost ALL the heavy lifting</li>
+                </ul>
+            </div>
+
+            <div id="binding" class="step slide" 
+                data-x="9920" 
+                data-y="0" 
+                data-z="-1000" 
+                data-scale=".01" 
+                data-rotate="-90">
+                <h1>WTF is Two-Way Data Binding?!</h1>
+                <ul style="margin-left: 20px;">
+                    <li>Your browser compiles and renders a template. <h4>... Duh ...</h4></li>
+                    <li>Angular watches this template, creating a "live view". <h4>shenanigans!</h4></li>
+                    <li>Changes to the model are instantly reflected in the "live view"! <h4>Lies!</h4></li>
+                </ul>
+            </div>
+
+            <div id="husky" class="step slide" 
+                data-x="9923" 
+                data-y="0" 
+                data-z="-1020" 
+                data-scale=".0001" 
+                data-rotate="0">
+                <img src="http://i.qkme.me/3vj96k.jpg" alt="">
+                <h5>I'll prove it shortly!</h5>
+            </div>
+
+            <div id="examples" class="step slide" 
+                data-x="10000" 
+                data-y="-1000" 
+                data-z="0" 
+                data-scale="1" 
+                data-rotate="0">
+                <h2>so...</h2>
+                <h1>How do you ... Angular?</h1>
+            </div>
+
+            <div id="example1" class="step slide" 
+                data-x="10000" 
+                data-y="-1000" 
+                data-z="0" 
+                data-scale="1" 
+                data-rotate="0">
+                <h1>Example: Updating Text</h1>
+                <img src="http://f.cl.ly/items/3s0c1D390v3e1c1J1L1w/Screen%20Shot%202013-08-18%20at%208.43.07%20PM.png" alt="">
+            </div>
+
+            <div id="example2" class="step slide" 
+                data-x="11000" 
+                data-y="-1000" 
+                data-z="0" 
+                data-scale="1" 
+                data-rotate="0">
+                <h1>Simple HTML Setup</h1>
+                <img src="http://f.cl.ly/items/050826152g3z2Y471w1X/Screen%20Shot%202013-08-18%20at%208.56.09%20PM.png" alt="">
+            </div>
+
+            <div id="example3" class="step slide" 
+                data-x="10000" 
+                data-y="-650" 
+                data-z="0" 
+                data-scale="1" 
+                data-rotate="0">
+                <h1>Angular Controller</h1>
+                <img src="http://f.cl.ly/items/2Y3p1r1n1K3i1V272w0M/Screen%20Shot%202013-08-18%20at%209.00.56%20PM.png" alt="">
+            </div>
+
+            <div id="example4" class="step slide" 
+                data-x="11000" 
+                data-y="-650" 
+                data-z="0" 
+                data-scale="1" 
+                data-rotate="0">
+                <h2>This be an intro,</h2>
+                <h1>What did you expect?!</h1>
+                <p>Hello World</p>
+            </div>
+
+            <div id="example" class="step slide" 
+                data-x="11000" 
+                data-y="-6050" 
+                data-z="-10000" 
+                data-scale="3" 
+                data-rotate="0">
+                <a href="/angular/example.html">Simple Example</a>
+            </div>
+
+            <div id="resources" class="step slide" 
+                data-x="0" 
+                data-y="-1000" 
+                data-z="0" 
+                data-scale="1" 
+                data-rotate="180">
+                <h1>Angular Learning Resources</h1>
+                <ul style="font-size: 2em;">
+                    <li>Official AngularJS Tutorial: <a href="http://docs.angularjs.org/tutorial">http://docs.angularjs.org/tutorial</a></li>
+                    <li>Dean Sofer's "Things I learned": <a href="http://deansofer.com/posts/view/21/Things-I-Learned-While-Working-on-AngularUI">http://deansofer.com/posts/view/21/Things-I-Learned-While-Working-on-AngularUI</a></li>
+                    <li>Pre-build JSFiddles: <a href="http://jsfiddle.net/user/joseym/fiddles/">http://jsfiddle.net/user/joseym/fiddles/</a></li>
+                    <li>NetTuts - Building a webapp from scratch: <a href="http://net.tutsplus.com/tutorials/javascript-ajax/building-a-web-app-from-scratch-in-angularjs/">http://net.tutsplus.com/tutorials/javascript-ajax/building-a-web-app-from-scratch-in-angularjs</a></li>
+                    <li>AngularUI Module Source: <a href="https://github.com/angular-ui/ui-utils/tree/master/modules">https://github.com/angular-ui/ui-utils/tree/master/modules</a></li>
+                    <li>AngularJS API Documentation (meh): <a href="http://docs.angularjs.org/api/">http://docs.angularjs.org/api/</a></li>
+                </ul>
+            </div>
+
+            <div id="end" class="step slide" 
+                data-x="0" 
+                data-y="0" 
+                data-z="800"
+                data-scale="10">
+                <h1>Questions?</h1>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src='//www.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+
+    <script src="../bower_components/jquery/jquery.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+
+        <!-- build:js ../scripts/plugins.js -->
+        <script src="../bower_components/bootstrap-sass/js/bootstrap-affix.js"></script>
+        <script src="../bower_components/bootstrap-sass/js/bootstrap-alert.js"></script>
+        <script src="../bower_components/bootstrap-sass/js/bootstrap-dropdown.js"></script>
+        <script src="../bower_components/bootstrap-sass/js/bootstrap-tooltip.js"></script>
+        <script src="../bower_components/bootstrap-sass/js/bootstrap-modal.js"></script>
+        <script src="../bower_components/bootstrap-sass/js/bootstrap-transition.js"></script>
+        <script src="../bower_components/bootstrap-sass/js/bootstrap-button.js"></script>
+        <script src="../bower_components/bootstrap-sass/js/bootstrap-popover.js"></script>
+        <script src="../bower_components/bootstrap-sass/js/bootstrap-typeahead.js"></script>
+        <script src="../bower_components/bootstrap-sass/js/bootstrap-carousel.js"></script>
+        <script src="../bower_components/bootstrap-sass/js/bootstrap-scrollspy.js"></script>
+        <script src="../bower_components/bootstrap-sass/js/bootstrap-collapse.js"></script>
+        <script src="../bower_components/bootstrap-sass/js/bootstrap-tab.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js scripts/modules.js -->
+        <script src="../bower_components/angular-resource/angular-resource.js"></script>
+        <script src="../bower_components/angular-cookies/angular-cookies.js"></script>
+        <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="../scripts/app.js"></script>
+        <script src="../scripts/controllers/main.js"></script>
+        <script src="../scripts/controllers/angular.js"></script>
+        <!-- endbuild -->
+
+        <script src="../bower_components/impress.js/js/impress.js"></script>
+        <script type="text/javascript">impress().init();</script>
+
+</body>
+</html>

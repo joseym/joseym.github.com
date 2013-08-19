@@ -1,0 +1,169 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="../styles/bootstrap.css">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- endbuild -->
+</head>
+  <body ng-app="tulsaWebDevsApp">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+      <script src="../bower_components/es5-shim/es5-shim.js"></script>
+      <script src="../bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+    <div class="container" ng-controller="AngularCtrl">
+
+        <div class="row" style="text-align: center; margin-top: 200px;">
+
+            <h1 style="margin-bottom: 20px;">Crazy, super basic, Angular Example!</h1>
+
+            <div class="well">
+                <em style="color: #777;">Template Text</em>
+                <h3 style="color: #999; margin-top: 0;"><span>{{</span> greeting <span>}} {{</span> subject <span>}}{{</span> punctuation <span>}}</span></h3>
+            </div>
+
+            <h1 class="span12" style="margin: 0 0 10px 15px;">{{ greeting }} 
+            
+                <span ng-class="{ hightlight: hilite }">{{ subject }}</span>
+
+            {{ punctuation }}</h1>
+
+            <div style="margin-bottom: 10px;">
+                <input type="text" style="margin: 0; width: 50px" ng-model="greeting" style="margin: 0;">
+                <input type="text" style="margin: 0; width: 50px" ng-model="subject" style="margin: 0;">
+                <input type="text" style="margin: 0; width: 15px" ng-model="punctuation" style="margin: 0;">
+            </div>
+
+            <button type="button" class="btn" ng-click="highlight()" ng-switch="hilite">
+                <span ng-switch-when="true">Remove Hilite</span>
+                <span ng-switch-default>Add Hilite</span>
+            </button>
+
+            <lable>
+                <input type="checkbox" ng-model="hilite"> Toggle Highlight
+            </lable>
+
+            <br /><hr />
+            
+            <a href="" ng-click="show.toggle('hilite')" ng-switch="show.hilite">
+                <span ng-switch-default>Show Highlite Code</span>
+                <span ng-switch-when="true">Hide Highlite Code</span>
+            </a> | 
+            <a href="" ng-click="show.toggle('button')" ng-switch="show.button">
+                <span ng-switch-default>Show Button Code</span>
+                <span ng-switch-when="true">Hide Button Code</span>
+            </a> | <a href="" ng-click="show.toggle('checkbox')" ng-switch="show.checkbox">
+                <span ng-switch-default>Show Checkbox Code</span>
+                <span ng-switch-when="true">Hide Checkbox Code</span>
+            </a>
+            
+            <div ng-show="show.hilite">
+                <div>
+                    <img class="img-rounded" src="http://f.cl.ly/items/0f2c1o2c2E3v2s2D3Z2h/Screen%20Shot%202013-08-19%20at%208.38.42%20AM.png" alt="">
+                    <div style="width: 500px;margin-left: 325px;margin-top: 10px;" class="alert alert-info"><i class="icon-info"></i> The <code>ng-class</code> attribute links to the Angular <code>Class</code> Directive. It takes a hash, where the key will be the class if the value is true. (The value can be an expression).</div>
+                </div>
+            </div>
+
+            <div ng-show="show.button">
+                <div>
+                    <h5>Button Title Changing Markup</h5>
+                    <img class="img-rounded" src="http://f.cl.ly/items/260I1u3E430A3p2z0O1u/Screen%20Shot%202013-08-19%20at%208.02.17%20AM.png" alt="">
+
+                    <div style="text-align: left; width: 658px;margin-left: 245px;margin-top: 10px;" class="alert alert-info">
+                        <p><i class="icon-info"></i> The <code>ng-click</code> attribute binds to the controller and, in this instance, fires a method defined to toggle the <code>$scope.hilite</code> boolean.</p>
+                        <p>
+                            The <code>ng-switch</code> attribute links the Angular <code>Switch</code> Directive to the contents of this button. Here's it's watching the <code>hilite</code> boolean for changes.<br>
+                        </p>
+                        <p>When the element with <code>-when</code> as an attribute resolves true <em>(so when <code>hilite</code> is true)</em> that span will display, if no statements resolve as true then <code>-default</code> will show.</p>
+                    </div>
+                </div>
+                <br/>
+                <div>
+                    <h5>Angular Controller Code</h5>
+                    <img class="img-rounded" src="http://f.cl.ly/items/0l2f0Z2m3E1L1I1v0H2E/Screen%20Shot%202013-08-19%20at%208.02.53%20AM.png" alt="">
+                </div>
+            </div>
+
+            <div ng-show="show.checkbox">
+                <div>
+                    <h5>Model Bound Checkbox Field</h5>
+                    <img class="img-rounded" src="http://f.cl.ly/items/2g0Y233e3j472X1k2q1v/Screen%20Shot%202013-08-19%20at%208.18.43%20AM.png" alt="">
+                    <div style="width: 500px;margin-left: 325px;margin-top: 10px;" class="alert alert-info">
+                        <i class="icon-info"></i> The <code>ng-model</code> attribute binds the field to the controller. This is the Two-Way binding.
+                    </div>
+                </div>
+                <br/>
+                <div>
+                    <h5>`Scope`'d Hilite Boolean</h5>
+                    <img class="img-rounded" src="http://f.cl.ly/items/2Z12033z04033p3u2N3M/Screen%20Shot%202013-08-19%20at%208.17.04%20AM.png" alt="">
+                </div>
+            </div>
+
+            <br /><hr />
+
+            <a href="/angular/#/resources">Return to Slideshow</a>
+
+        </div>
+        
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src='//www.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+
+    <script src="../bower_components/jquery/jquery.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+
+        <!-- build:js ../scripts/plugins.js -->
+        <script src="../bower_components/bootstrap-sass/js/bootstrap-affix.js"></script>
+        <script src="../bower_components/bootstrap-sass/js/bootstrap-alert.js"></script>
+        <script src="../bower_components/bootstrap-sass/js/bootstrap-dropdown.js"></script>
+        <script src="../bower_components/bootstrap-sass/js/bootstrap-tooltip.js"></script>
+        <script src="../bower_components/bootstrap-sass/js/bootstrap-modal.js"></script>
+        <script src="../bower_components/bootstrap-sass/js/bootstrap-transition.js"></script>
+        <script src="../bower_components/bootstrap-sass/js/bootstrap-button.js"></script>
+        <script src="../bower_components/bootstrap-sass/js/bootstrap-popover.js"></script>
+        <script src="../bower_components/bootstrap-sass/js/bootstrap-typeahead.js"></script>
+        <script src="../bower_components/bootstrap-sass/js/bootstrap-carousel.js"></script>
+        <script src="../bower_components/bootstrap-sass/js/bootstrap-scrollspy.js"></script>
+        <script src="../bower_components/bootstrap-sass/js/bootstrap-collapse.js"></script>
+        <script src="../bower_components/bootstrap-sass/js/bootstrap-tab.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js scripts/modules.js -->
+        <script src="../bower_components/angular-resource/angular-resource.js"></script>
+        <script src="../bower_components/angular-cookies/angular-cookies.js"></script>
+        <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="../scripts/app.js"></script>
+        <script src="../scripts/controllers/main.js"></script>
+        <script src="../scripts/controllers/angular.js"></script>
+        <!-- endbuild -->
+
+</body>
+</html>

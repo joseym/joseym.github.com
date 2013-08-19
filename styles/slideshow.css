@@ -1,0 +1,252 @@
+@import url(http://fonts.googleapis.com/css?family=Marcellus+SC);
+
+body {
+  font-family: 'Marcellus SC', serif;
+  color: #333333;
+  background: #eeeeee;
+}
+
+#impress .slide {
+  width: 1000px;
+}
+
+#impress .slide img {
+  max-width: inherit !important;
+  padding: 20px;
+  background: #e1e1e1;
+  border-radius: 10px;
+}
+
+#impress .bubble {
+  width: 350px;
+  padding: 20px;
+  background: #6dcff6;
+  border-radius: 10px;
+}
+
+#impress .bubble p {
+  font-size: 1.7em;
+}
+
+#impress h1 {
+  font-size: 7em;
+  color: #a6120d;
+  text-align: center;
+  text-shadow: 0 2px 0px #eeeeee, -3px 0px 0px #eeeeee, 0px -3px 0px #eeeeee, -2px -2px 0px #eeeeee;
+}
+
+#impress h2 {
+  text-align: center;
+}
+
+#impress #start {
+  width: 1000px;
+}
+
+#impress #start h1 {
+  color: #333;
+}
+
+#impress #start cite {
+  position: absolute;
+  right: 145px;
+  bottom: 92px;
+}
+
+#impress #start img {
+  padding: 0;
+  background: none;
+}
+
+#impress #me {
+  position: relative;
+  transition: opacity 0.25s ease-in 1.25s;
+}
+
+#impress #me.future,
+#impress #me.past {
+  opacity: 0;
+}
+
+#impress #me.active {
+  opacity: 1;
+}
+
+#impress #me h1 small {
+  position: absolute;
+  top: 0;
+  left: 130px;
+}
+
+#impress #me ul {
+  padding: 0;
+  margin: 25px 0 0 210px;
+  list-style: none;
+}
+
+#impress #me ul li {
+  float: left;
+  margin-right: 10px;
+}
+
+#impress #defined {
+  opacity: 1;
+  transition: opacity ease .5s;
+}
+
+#impress #defined.past {
+  opacity: 0.5;
+}
+
+#impress #listed {
+  width: 1260px;
+  font-size: 3em;
+}
+
+#impress #listed ul li {
+  margin-bottom: 10px;
+  line-height: 50px !important;
+}
+
+#impress #mvc {
+  width: 200px;
+}
+
+#impress #mvc-model,
+#impress #mvc-controller,
+#impress #mvc-view {
+  width: auto;
+  opacity: 1;
+  transition: opacity ease .5s;
+}
+
+#impress #mvc-model.past,
+#impress #mvc-controller.past,
+#impress #mvc-view.past,
+#impress #mvc-model.future,
+#impress #mvc-controller.future,
+#impress #mvc-view.future {
+  opacity: 0.5;
+}
+
+#impress #differences {
+  width: 668px;
+}
+
+#impress #differences ul {
+  margin-top: 20px;
+  font-size: 2em;
+}
+
+#impress #differences ul li {
+  margin-bottom: 10px;
+}
+
+#impress #binding {
+  width: 800px;
+}
+
+#impress #binding h1 {
+  margin-bottom: 30px;
+  font-size: 4em;
+}
+
+#impress #binding h4 {
+  display: inline;
+  color: #dd1b16;
+}
+
+#impress #binding ul {
+  margin-top: 20px;
+  font-size: 2em;
+}
+
+#impress #binding ul li {
+  margin-bottom: 10px;
+}
+
+#impress #husky {
+  width: auto;
+}
+
+#impress #husky h5 {
+  float: right;
+}
+
+#impress #examples {
+  opacity: 1;
+  transition: opacity linear .5s;
+}
+
+#impress #examples.past,
+#impress #examples.future {
+  opacity: 0;
+}
+
+#impress #example1,
+#impress #example2,
+#impress #example3,
+#impress #example4 {
+  text-align: center;
+  opacity: 1;
+  transition: opacity ease .5s;
+}
+
+#impress #example1 h1,
+#impress #example2 h1,
+#impress #example3 h1,
+#impress #example4 h1 {
+  margin-bottom: 20px;
+  font-size: 4em;
+}
+
+#impress #example1.past,
+#impress #example2.past,
+#impress #example3.past,
+#impress #example4.past,
+#impress #example1.future,
+#impress #example2.future,
+#impress #example3.future,
+#impress #example4.future {
+  opacity: 0.1;
+}
+
+#impress #example {
+  font-size: 4em;
+  text-align: center;
+}
+
+#impress #resources {
+  opacity: 1;
+  transition: opacity ease .5s;
+}
+
+#impress #resources.past,
+#impress #resources.future {
+  opacity: 0;
+}
+
+#impress #resources ul {
+  font-size: 2em;
+  line-height: 1.2em;
+}
+
+#impress #resources ul li {
+  margin-bottom: 10px;
+}
+
+#impress #resources h1 {
+  margin-bottom: 20px;
+  font-size: 4em;
+}
+
+#impress #end {
+  padding: 50px;
+  background: rgba(238, 238, 238, 0.8);
+  opacity: 1;
+  transition: opacity ease .5s;
+}
+
+#impress #end.future {
+  opacity: 0;
+}
